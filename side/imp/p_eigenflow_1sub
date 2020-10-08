@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+import numpy as np
+import matplotlib.pyplot as plt
+import sys
+import py_functions as pf
+
+arguments = []
+for argument in sys.argv[1:]:
+    arguments.append( argument )
+if np.size(arguments)<1:
+    print('Incorrect arguments. Filename (mandatory) and #steps and #eigenvalues (optional) must be provided. Exiting.')
+    sys.exit()
+
+filename = arguments[0]
+f = open(filename,'r')
+q = int(filename[3])
+s = 0.5 * ( float(filename[5]) - 1 )
+o_e = filename[0]
+
+if np.size(arguments)>1: n_steps = int(arguments[1])
+else:
+    if o_e=='e': n_steps=66
+    else: n_steps=65
+if np.size(arguments)>2: n_eigenvalues = int(arguments[2])
+else: n_eigenvalues = 6
+
+if n_steps%2==0:
+    steps = np.arange(n_steps//2+1)
+    steps[:] = steps[:]*2
+else:
+    steps = np.arange(n_steps//2+1)
+    steps[:] = steps[:]*2+1
+
+eigenvalues = np.empty((n_steps//2+1,n_eigenvalues))
+
+plt.style.use('seaborn-whitegrid')
+fig, ax = plt.subplots()
+
+pf.plotfile(f,steps,eigenvalues,ax)
+f.close()
+
+ax.set_title('Lowest eigenvalues for Q={}, S={}'.format(q,s))
+
+pf.label_flowplot(n_steps,n_eigenvalues,ax)
+
+plt.show()
+
+

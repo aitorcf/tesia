@@ -1,0 +1,16 @@
+[extra]
+U=0.01
+Gamma=0.1
+delta=0.0
+t=0.1
+
+[param]
+symtype=QS
+discretization=Z
+Lambda=2
+Tmin=1e-15
+keepenergy=8
+keep=5000
+model=SIDE
+dumpannotated=20
+dumpgroups=false

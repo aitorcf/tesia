@@ -1,0 +1,14 @@
+[extra]
+spin=1/2
+Jkondo=0.15
+
+[param]
+symtype=QS
+discretization=Z
+z=0.250
+Lambda=2
+Tmin=1e-15
+keepenergy=12
+keep=5000
+
+model=./kondo.m

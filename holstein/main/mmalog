@@ -1,0 +1,268 @@
+NRG Ljubljana 2020.03 (c) Rok Zitko, rok.zitko@ijs.si, 2005-2019
+Mathematica version: 12.1.0 for Linux x86 (64-bit) (March 18, 2020)
+sneg version: 1.251
+Loading module initialparse.m
+Options: {Nph=10}
+Loading module models.m
+models started
+Loading module custommodels.m
+Can't load custommodels.m. Continuing.
+Loading module model.m
+def1ch, NRDOTS=1
+H0=coefzeta[1, 0]*(-1 + nc[f[0, 0, 0], f[1, 0, 0]] + nc[f[0, 0, 1], f[1, 0, 1]])
+NRDOTS:1 CHANNELS:1 COEFCHANNELS:1
+basis:{d[], f[0]}
+Hamiltonian generated. U/2 - coefzeta[1, 0] + delta*nc[d[0, 0], d[1, 0]] - (U*nc[d[0, 0], d[1, 0]])/2 + gammaPolCh[1]*nc[d[0, 0], f[1, 0, 0]] + delta*nc[d[0, 1], d[1, 1]] - (U*nc[d[0, 1], d[1, 1]])/2 + 
+   gammaPolCh[1]*nc[d[0, 1], f[1, 0, 1]] + gammaPolCh[1]*nc[f[0, 0, 0], d[1, 0]] + coefzeta[1, 0]*nc[f[0, 0, 0], f[1, 0, 0]] + gammaPolCh[1]*nc[f[0, 0, 1], d[1, 1]] + coefzeta[1, 0]*nc[f[0, 0, 1], f[1, 0, 1]] - gep*nc[ket[0], bra[1]] - 
+   gep*nc[ket[1], bra[0]] + omega*nc[ket[1], bra[1]] - Sqrt[2]*gep*nc[ket[1], bra[2]] - Sqrt[2]*gep*nc[ket[2], bra[1]] + 2*omega*nc[ket[2], bra[2]] - Sqrt[3]*gep*nc[ket[2], bra[3]] - Sqrt[3]*gep*nc[ket[3], bra[2]] + 
+   3*omega*nc[ket[3], bra[3]] - 2*gep*nc[ket[3], bra[4]] - 2*gep*nc[ket[4], bra[3]] + 4*omega*nc[ket[4], bra[4]] - Sqrt[5]*gep*nc[ket[4], bra[5]] - Sqrt[5]*gep*nc[ket[5], bra[4]] + 5*omega*nc[ket[5], bra[5]] - 
+   Sqrt[6]*gep*nc[ket[5], bra[6]] - Sqrt[6]*gep*nc[ket[6], bra[5]] + 6*omega*nc[ket[6], bra[6]] - Sqrt[7]*gep*nc[ket[6], bra[7]] - Sqrt[7]*gep*nc[ket[7], bra[6]] + 7*omega*nc[ket[7], bra[7]] - 2*Sqrt[2]*gep*nc[ket[7], bra[8]] - 
+   2*Sqrt[2]*gep*nc[ket[8], bra[7]] + 8*omega*nc[ket[8], bra[8]] - 3*gep*nc[ket[8], bra[9]] - 3*gep*nc[ket[9], bra[8]] + 9*omega*nc[ket[9], bra[9]] - Sqrt[10]*gep*nc[ket[9], bra[10]] - Sqrt[10]*gep*nc[ket[10], bra[9]] + 
+   10*omega*nc[ket[10], bra[10]] - U*nc[d[0, 0], d[0, 1], d[1, 0], d[1, 1]] + gep*nc[d[0, 0], d[1, 0], ket[0], bra[1]] + gep*nc[d[0, 0], d[1, 0], ket[1], bra[0]] + Sqrt[2]*gep*nc[d[0, 0], d[1, 0], ket[1], bra[2]] + 
+   Sqrt[2]*gep*nc[d[0, 0], d[1, 0], ket[2], bra[1]] + Sqrt[3]*gep*nc[d[0, 0], d[1, 0], ket[2], bra[3]] + Sqrt[3]*gep*nc[d[0, 0], d[1, 0], ket[3], bra[2]] + 2*gep*nc[d[0, 0], d[1, 0], ket[3], bra[4]] + 
+   2*gep*nc[d[0, 0], d[1, 0], ket[4], bra[3]] + Sqrt[5]*gep*nc[d[0, 0], d[1, 0], ket[4], bra[5]] + Sqrt[5]*gep*nc[d[0, 0], d[1, 0], ket[5], bra[4]] + Sqrt[6]*gep*nc[d[0, 0], d[1, 0], ket[5], bra[6]] + 
+   Sqrt[6]*gep*nc[d[0, 0], d[1, 0], ket[6], bra[5]] + Sqrt[7]*gep*nc[d[0, 0], d[1, 0], ket[6], bra[7]] + Sqrt[7]*gep*nc[d[0, 0], d[1, 0], ket[7], bra[6]] + 2*Sqrt[2]*gep*nc[d[0, 0], d[1, 0], ket[7], bra[8]] + 
+   2*Sqrt[2]*gep*nc[d[0, 0], d[1, 0], ket[8], bra[7]] + 3*gep*nc[d[0, 0], d[1, 0], ket[8], bra[9]] + 3*gep*nc[d[0, 0], d[1, 0], ket[9], bra[8]] + Sqrt[10]*gep*nc[d[0, 0], d[1, 0], ket[9], bra[10]] + 
+   Sqrt[10]*gep*nc[d[0, 0], d[1, 0], ket[10], bra[9]] + gep*nc[d[0, 1], d[1, 1], ket[0], bra[1]] + gep*nc[d[0, 1], d[1, 1], ket[1], bra[0]] + Sqrt[2]*gep*nc[d[0, 1], d[1, 1], ket[1], bra[2]] + 
+   Sqrt[2]*gep*nc[d[0, 1], d[1, 1], ket[2], bra[1]] + Sqrt[3]*gep*nc[d[0, 1], d[1, 1], ket[2], bra[3]] + Sqrt[3]*gep*nc[d[0, 1], d[1, 1], ket[3], bra[2]] + 2*gep*nc[d[0, 1], d[1, 1], ket[3], bra[4]] + 
+   2*gep*nc[d[0, 1], d[1, 1], ket[4], bra[3]] + Sqrt[5]*gep*nc[d[0, 1], d[1, 1], ket[4], bra[5]] + Sqrt[5]*gep*nc[d[0, 1], d[1, 1], ket[5], bra[4]] + Sqrt[6]*gep*nc[d[0, 1], d[1, 1], ket[5], bra[6]] + 
+   Sqrt[6]*gep*nc[d[0, 1], d[1, 1], ket[6], bra[5]] + Sqrt[7]*gep*nc[d[0, 1], d[1, 1], ket[6], bra[7]] + Sqrt[7]*gep*nc[d[0, 1], d[1, 1], ket[7], bra[6]] + 2*Sqrt[2]*gep*nc[d[0, 1], d[1, 1], ket[7], bra[8]] + 
+   2*Sqrt[2]*gep*nc[d[0, 1], d[1, 1], ket[8], bra[7]] + 3*gep*nc[d[0, 1], d[1, 1], ket[8], bra[9]] + 3*gep*nc[d[0, 1], d[1, 1], ket[9], bra[8]] + Sqrt[10]*gep*nc[d[0, 1], d[1, 1], ket[9], bra[10]] + 
+   Sqrt[10]*gep*nc[d[0, 1], d[1, 1], ket[10], bra[9]]
+H-conj[H]=0
+SCALE[0]=1.0201394465967895
+faktor=1.3862943611198906
+Generating basis
+Adding phonons
+Wilson chain
+Tmin=1.*^-6
+Tmin=1.*^-6 ==> Nmax=39
+DISCNMAX=39
+Discretization checksum [-1] (channel 1): 4.135903062765138374357043460349814`10.*^-25
+BAND="flat" thetaCh={"2."}
+Discretization (channel 1)
+"xitable" (channel 1)
+0.5452874708
+0.4155094683
+0.3218991777
+0.2402694095
+0.1749149188
+0.1255632919
+0.08947082529
+0.06351086931
+0.04499637947
+0.03184826349
+0.02253110984
+0.01593578852
+0.01126967936
+0.007969353023
+0.005635355527
+0.003984858909
+0.002817742254
+0.001992452256
+0.001408879189
+0.0009962289782
+0.000704440602
+0.0004981148454
+0.000352220427
+0.0002490574672
+0.0001761102292
+0.0001245287392
+0.00008805511659
+0.00006226437029
+0.00004402755854
+0.00003113218523
+0.0000220137793
+0.00001556609263
+0.00001100688965
+7.783046315e-6
+5.503444827e-6
+3.891523157e-6
+2.751722414e-6
+1.945761579e-6
+1.375861207e-6
+9.728807894e-7
+"zetatable" (channel 1)
+0.e-999
+0.e-998
+0.e-997
+0.e-997
+0.e-996
+0.e-995
+0.e-994
+0.e-993
+0.e-992
+0.e-991
+0.e-991
+0.e-990
+0.e-989
+0.e-988
+0.e-987
+0.e-986
+0.e-986
+0.e-985
+0.e-984
+0.e-983
+0.e-982
+0.e-981
+0.e-981
+0.e-980
+0.e-979
+0.e-978
+0.e-977
+0.e-976
+0.e-975
+0.e-975
+0.e-974
+0.e-973
+0.e-972
+0.e-971
+0.e-970
+0.e-970
+0.e-969
+0.e-968
+0.e-967
+0.e-966
+Precision last xi:960.4525767068475
+Precision last zeta: 0.
+Discretization done.
+thetaCh={"2."}
+theta0Ch={"0.4"}
+gammaPolCh={"0.3568248232305542"}
+checkdefinitions[] -> 21.414610567403862
+calcgsenergy[]
+diagvc[{-2, 1}]
+Generating matrix: ham_-2.1
+hamil={{(U - 2*coefzeta[1, 0])/2, -gep, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {-gep, omega + U/2 - coefzeta[1, 0], -(Sqrt[2]*gep), 0, 0, 0, 0, 0, 0, 0, 0}, {0, -(Sqrt[2]*gep), (4*omega + U - 2*coefzeta[1, 0])/2, -(Sqrt[3]*gep), 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -(Sqrt[3]*gep), (6*omega + U - 2*coefzeta[1, 0])/2, -2*gep, 0, 0, 0, 0, 0, 0}, {0, 0, 0, -2*gep, (8*omega + U - 2*coefzeta[1, 0])/2, -(Sqrt[5]*gep), 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, -(Sqrt[5]*gep), 5*omega + U/2 - coefzeta[1, 0], -(Sqrt[6]*gep), 0, 0, 0, 0}, {0, 0, 0, 0, 0, -(Sqrt[6]*gep), 6*omega + U/2 - coefzeta[1, 0], -(Sqrt[7]*gep), 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, -(Sqrt[7]*gep), 7*omega + U/2 - coefzeta[1, 0], -2*Sqrt[2]*gep, 0, 0}, {0, 0, 0, 0, 0, 0, 0, -2*Sqrt[2]*gep, 8*omega + U/2 - coefzeta[1, 0], -3*gep, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, -3*gep, 9*omega + U/2 - coefzeta[1, 0], -(Sqrt[10]*gep)}, {0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[10]*gep), (20*omega + U - 2*coefzeta[1, 0])/2}}
+dim={11, 11}
+det[vec]=-0.9999999999999998 1-abs=2.220446049250313*^-16
+orthogonality check=2.8625703339706576*^-14
+diagvc[{-1, 2}]
+Generating matrix: ham_-1.2
+hamil={{U/2, gammaPolCh[1], -gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {gammaPolCh[1], delta - coefzeta[1, 0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {-gep, 0, omega + U/2, gammaPolCh[1], -(Sqrt[2]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, gammaPolCh[1], delta + omega - coefzeta[1, 0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -(Sqrt[2]*gep), 0, (4*omega + U)/2, gammaPolCh[1], -(Sqrt[3]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, gammaPolCh[1], delta + 2*omega - coefzeta[1, 0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, -(Sqrt[3]*gep), 0, (6*omega + U)/2, gammaPolCh[1], -2*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 3*omega - coefzeta[1, 0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, -2*gep, 0, (8*omega + U)/2, gammaPolCh[1], -(Sqrt[5]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 4*omega - coefzeta[1, 0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[5]*gep), 0, 5*omega + U/2, gammaPolCh[1], -(Sqrt[6]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 5*omega - coefzeta[1, 0], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[6]*gep), 0, 6*omega + U/2, gammaPolCh[1], -(Sqrt[7]*gep), 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 6*omega - coefzeta[1, 0], 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[7]*gep), 0, 7*omega + U/2, gammaPolCh[1], -2*Sqrt[2]*gep, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 7*omega - coefzeta[1, 0], 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2*Sqrt[2]*gep, 0, 8*omega + U/2, gammaPolCh[1], -3*gep, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 8*omega - coefzeta[1, 0], 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3*gep, 0, 9*omega + U/2, gammaPolCh[1], -(Sqrt[10]*gep), 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 9*omega - coefzeta[1, 0], 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[10]*gep), 0, (20*omega + U)/2, gammaPolCh[1]}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, gammaPolCh[1], delta + 10*omega - coefzeta[1, 0]}}
+dim={22, 22}
+det[vec]=-0.9999999999999998 1-abs=2.220446049250313*^-16
+orthogonality check=9.520114655310083*^-14
+diagvc[{0, 1}]
+Generating matrix: ham_0.1
+hamil={{U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {Sqrt[2]*gammaPolCh[1], delta, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, Sqrt[2]*gammaPolCh[1], (4*delta + U - 2*coefzeta[1, 0])/2, 0, 0, gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {-gep, 0, 0, omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -(Sqrt[2]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, gep, 0, Sqrt[2]*gammaPolCh[1], 2*delta + omega + U/2 - coefzeta[1, 0], 0, 0, Sqrt[2]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, -(Sqrt[2]*gep), 0, 0, 2*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -(Sqrt[3]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 2*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, Sqrt[2]*gep, 0, Sqrt[2]*gammaPolCh[1], (4*delta + 4*omega + U - 2*coefzeta[1, 0])/2, 0, 0, Sqrt[3]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, -(Sqrt[3]*gep), 0, 0, 3*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -2*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 3*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, Sqrt[3]*gep, 0, Sqrt[2]*gammaPolCh[1], (4*delta + 6*omega + U - 2*coefzeta[1, 0])/2, 0, 0, 2*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, -2*gep, 0, 0, 4*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -(Sqrt[5]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 4*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2*gep, 0, Sqrt[2]*gammaPolCh[1], (4*delta + 8*omega + U - 2*coefzeta[1, 0])/2, 0, 0, Sqrt[5]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[5]*gep), 0, 0, 5*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -(Sqrt[6]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 5*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[5]*gep, 0, Sqrt[2]*gammaPolCh[1], 2*delta + 5*omega + U/2 - coefzeta[1, 0], 0, 0, Sqrt[6]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[6]*gep), 0, 0, 6*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -(Sqrt[7]*gep), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 6*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[6]*gep, 0, Sqrt[2]*gammaPolCh[1], 2*delta + 6*omega + U/2 - coefzeta[1, 0], 0, 0, Sqrt[7]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[7]*gep), 0, 0, 7*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -2*Sqrt[2]*gep, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 7*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[7]*gep, 0, Sqrt[2]*gammaPolCh[1], 2*delta + 7*omega + U/2 - coefzeta[1, 0], 0, 0, 2*Sqrt[2]*gep, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2*Sqrt[2]*gep, 0, 0, 8*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -3*gep, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 8*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2*Sqrt[2]*gep, 0, Sqrt[2]*gammaPolCh[1], 2*delta + 8*omega + U/2 - coefzeta[1, 0], 0, 0, 3*gep, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3*gep, 0, 0, 9*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0, -(Sqrt[10]*gep), 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 9*omega, Sqrt[2]*gammaPolCh[1], 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3*gep, 0, Sqrt[2]*gammaPolCh[1], 2*delta + 9*omega + U/2 - coefzeta[1, 0], 0, 0, Sqrt[10]*gep}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -(Sqrt[10]*gep), 0, 0, 10*omega + U/2 + coefzeta[1, 0], Sqrt[2]*gammaPolCh[1], 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[2]*gammaPolCh[1], delta + 10*omega, Sqrt[2]*gammaPolCh[1]}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[10]*gep, 0, Sqrt[2]*gammaPolCh[1], (4*delta + 20*omega + U - 2*coefzeta[1, 0])/2}}
+dim={33, 33}
+det[vec]=-0.9999999999999998 1-abs=2.220446049250313*^-16
+orthogonality check=2.1390377944598748*^-13
+diagvc[{0, 3}]
+Generating matrix: ham_0.3
+hamil={{delta, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, delta + omega, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, delta + 2*omega, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, delta + 3*omega, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, delta + 4*omega, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, delta + 5*omega, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, delta + 6*omega, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, delta + 7*omega, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, delta + 8*omega, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 9*omega, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 10*omega}}
+dim={11, 11}
+det[vec]=1. 1-abs=0.
+orthogonality check=0.
+diagvc[{1, 2}]
+Generating matrix: ham_1.2
+hamil={{delta + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {-gammaPolCh[1], (4*delta + U)/2, 0, gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, delta + omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, gep, -gammaPolCh[1], 2*delta + omega + U/2, 0, Sqrt[2]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, delta + 2*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, Sqrt[2]*gep, -gammaPolCh[1], (4*delta + 4*omega + U)/2, 0, Sqrt[3]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, delta + 3*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, Sqrt[3]*gep, -gammaPolCh[1], (4*delta + 6*omega + U)/2, 0, 2*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, delta + 4*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 2*gep, -gammaPolCh[1], (4*delta + 8*omega + U)/2, 0, Sqrt[5]*gep, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 5*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[5]*gep, -gammaPolCh[1], 2*delta + 5*omega + U/2, 0, Sqrt[6]*gep, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 6*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[6]*gep, -gammaPolCh[1], 2*delta + 6*omega + U/2, 0, Sqrt[7]*gep, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 7*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[7]*gep, -gammaPolCh[1], 2*delta + 7*omega + U/2, 0, 2*Sqrt[2]*gep, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 8*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2*Sqrt[2]*gep, -gammaPolCh[1], 2*delta + 8*omega + U/2, 0, 3*gep, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 9*omega + coefzeta[1, 0], -gammaPolCh[1], 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3*gep, -gammaPolCh[1], 2*delta + 9*omega + U/2, 0, Sqrt[10]*gep}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, delta + 10*omega + coefzeta[1, 0], -gammaPolCh[1]}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[10]*gep, -gammaPolCh[1], (4*delta + 20*omega + U)/2}}
+dim={22, 22}
+det[vec]=-1. 1-abs=0.
+orthogonality check=8.790332153911278*^-14
+diagvc[{2, 1}]
+Generating matrix: ham_2.1
+hamil={{2*delta + U/2 + coefzeta[1, 0], gep, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {gep, 2*delta + omega + U/2 + coefzeta[1, 0], Sqrt[2]*gep, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, Sqrt[2]*gep, 2*delta + 2*omega + U/2 + coefzeta[1, 0], Sqrt[3]*gep, 0, 0, 0, 0, 0, 0, 0}, {0, 0, Sqrt[3]*gep, 2*delta + 3*omega + U/2 + coefzeta[1, 0], 2*gep, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 2*gep, 2*delta + 4*omega + U/2 + coefzeta[1, 0], Sqrt[5]*gep, 0, 0, 0, 0, 0}, {0, 0, 0, 0, Sqrt[5]*gep, 2*delta + 5*omega + U/2 + coefzeta[1, 0], Sqrt[6]*gep, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, Sqrt[6]*gep, 2*delta + 6*omega + U/2 + coefzeta[1, 0], Sqrt[7]*gep, 0, 0, 0}, {0, 0, 0, 0, 0, 0, Sqrt[7]*gep, 2*delta + 7*omega + U/2 + coefzeta[1, 0], 2*Sqrt[2]*gep, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 2*Sqrt[2]*gep, 2*delta + 8*omega + U/2 + coefzeta[1, 0], 3*gep, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 3*gep, 2*delta + 9*omega + U/2 + coefzeta[1, 0], Sqrt[10]*gep}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, Sqrt[10]*gep, 2*delta + 10*omega + U/2 + coefzeta[1, 0]}}
+dim={11, 11}
+det[vec]=-0.9999999999999998 1-abs=2.220446049250313*^-16
+orthogonality check=2.8625703339706576*^-14
+Lowest energies (absolute):{-0.738970792666775, -0.6007594486667996, -0.4542385161599721, -0.43499801735727184, -0.4349980173572715, -0.30280462596379026, -0.26006273837418853, -0.2600627383741885, -0.19999998177872638, 
+   -0.19999998177872638, -0.14772464895047888, -0.08382999554285142, -0.08382999554285041, 0., 1.591454207483663*^-6, 1.591454207483663*^-6, 0.008618400796590027, 0.016505507284282645, 0.0939022246990441, 0.09390222469904476}
+Lowest energies (GS shifted):{0., 0.13821134399997537, 0.2847322765068029, 0.3039727753095032, 0.3039727753095035, 0.43616616670298475, 0.4789080542925865, 0.47890805429258654, 0.5389708108880487, 0.5389708108880487, 0.5912461437162961, 
+   0.6551407971239236, 0.6551407971239246, 0.738970792666775, 0.7389723841209825, 0.7389723841209825, 0.747589193463365, 0.7554762999510577, 0.8328730173658191, 0.8328730173658198}
+Scale factor SCALE(Ninit):1.0201394465967895
+Lowest energies (shifted and scaled):{0., 0.1354827954757086, 0.27911113275413163, 0.2979717883898754, 0.29797178838987576, 0.42755543681606073, 0.46945352019298503, 0.4694535201929851, 0.528330526464856, 0.528330526464856, 
+   0.5795738471722743, 0.6422071014992015, 0.6422071014992025, 0.7243821372970136, 0.7243836973329605, 0.7243836973329605, 0.7328303948615468, 0.7405617952245112, 0.816430557748065, 0.8164305577480656}
+makeireducf GENERAL
+Loading module operators.m
+operators.m started
+s: n_d nc[d[0, 0], d[1, 0]] + nc[d[0, 1], d[1, 1]]
+s: n_d^2 nc[d[0, 0], d[1, 0]] + nc[d[0, 1], d[1, 1]] - 2*nc[d[0, 0], d[0, 1], d[1, 0], d[1, 1]]
+d: A_d d
+s: acr nc[ket[1], bra[0]] + Sqrt[2]*nc[ket[2], bra[1]] + Sqrt[3]*nc[ket[3], bra[2]] + 2*nc[ket[4], bra[3]] + Sqrt[5]*nc[ket[5], bra[4]] + Sqrt[6]*nc[ket[6], bra[5]] + Sqrt[7]*nc[ket[7], bra[6]] + 2*Sqrt[2]*nc[ket[8], bra[7]] + 
+   3*nc[ket[9], bra[8]] + Sqrt[10]*nc[ket[10], bra[9]]
+s: nph nc[ket[1], bra[1]] + 2*nc[ket[2], bra[2]] + 3*nc[ket[3], bra[3]] + 4*nc[ket[4], bra[4]] + 5*nc[ket[5], bra[5]] + 6*nc[ket[6], bra[6]] + 7*nc[ket[7], bra[7]] + 8*nc[ket[8], bra[8]] + 9*nc[ket[9], bra[9]] + 10*nc[ket[10], bra[10]]
+s: displ nc[ket[0], bra[1]] + nc[ket[1], bra[0]] + Sqrt[2]*nc[ket[1], bra[2]] + Sqrt[2]*nc[ket[2], bra[1]] + Sqrt[3]*nc[ket[2], bra[3]] + Sqrt[3]*nc[ket[3], bra[2]] + 2*nc[ket[3], bra[4]] + 2*nc[ket[4], bra[3]] + 
+   Sqrt[5]*nc[ket[4], bra[5]] + Sqrt[5]*nc[ket[5], bra[4]] + Sqrt[6]*nc[ket[5], bra[6]] + Sqrt[6]*nc[ket[6], bra[5]] + Sqrt[7]*nc[ket[6], bra[7]] + Sqrt[7]*nc[ket[7], bra[6]] + 2*Sqrt[2]*nc[ket[7], bra[8]] + 2*Sqrt[2]*nc[ket[8], bra[7]] + 
+   3*nc[ket[8], bra[9]] + 3*nc[ket[9], bra[8]] + Sqrt[10]*nc[ket[9], bra[10]] + Sqrt[10]*nc[ket[10], bra[9]]
+s: displ^2 nc[ket[0], bra[0]] + Sqrt[2]*nc[ket[0], bra[2]] + 3*nc[ket[1], bra[1]] + Sqrt[6]*nc[ket[1], bra[3]] + Sqrt[2]*nc[ket[2], bra[0]] + 5*nc[ket[2], bra[2]] + 2*Sqrt[3]*nc[ket[2], bra[4]] + Sqrt[6]*nc[ket[3], bra[1]] + 
+   7*nc[ket[3], bra[3]] + 2*Sqrt[5]*nc[ket[3], bra[5]] + 2*Sqrt[3]*nc[ket[4], bra[2]] + 9*nc[ket[4], bra[4]] + Sqrt[30]*nc[ket[4], bra[6]] + 2*Sqrt[5]*nc[ket[5], bra[3]] + 11*nc[ket[5], bra[5]] + Sqrt[42]*nc[ket[5], bra[7]] + 
+   Sqrt[30]*nc[ket[6], bra[4]] + 13*nc[ket[6], bra[6]] + 2*Sqrt[14]*nc[ket[6], bra[8]] + Sqrt[42]*nc[ket[7], bra[5]] + 15*nc[ket[7], bra[7]] + 6*Sqrt[2]*nc[ket[7], bra[9]] + 2*Sqrt[14]*nc[ket[8], bra[6]] + 17*nc[ket[8], bra[8]] + 
+   3*Sqrt[10]*nc[ket[8], bra[10]] + 6*Sqrt[2]*nc[ket[9], bra[7]] + 19*nc[ket[9], bra[9]] + 3*Sqrt[10]*nc[ket[10], bra[8]] + 10*nc[ket[10], bra[10]]
+operators.m done
+Loading module customoperators.m
+Can't load customoperators.m. Continuing.
+Loading module modeloperators.m
+Can't load modeloperators.m. Continuing.
+Timing report
+{basis, 0.157404`5.648560758087345}
+{ham, 24.0917149999999999999`7.055261460027467}
+{maketable, 32.295003`7.960680322718331}
+{xi, 0.349169`5.994580672611508}
+{_, 0}
+data
+"Success!"

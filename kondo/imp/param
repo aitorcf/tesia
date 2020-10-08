@@ -1,0 +1,19 @@
+[extra]
+spin=1/2
+Jkondo=0.1
+
+[param]
+symtype=QS
+discretization=Z
+Lambda=2.0
+Tmin=1e-15
+keepenergy=12
+keep=5000
+
+model=./kondo.m
+
+dumpannotated=40
+dumpgroups=false
+
+ops=n_f SZ2f0 SZf0 SZ2 SZ
+

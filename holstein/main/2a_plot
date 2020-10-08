@@ -1,0 +1,10 @@
+#!/bin/sh
+gnuplot --persist <<EOF
+set termoption enh
+set title "Anderson-Holstein model - spectral function"
+set xlabel '{/Symbol w}/D'
+set ylabel 'A({/Symbol w}) D'
+set xrange [-1:1]
+plot 'spec_FDM_dens_A_d-A_d.dat' with l title 'g=0.1', \
+  '../0/spec_FDM_dens_A_d-A_d.dat' with l title 'g=0'
+EOF

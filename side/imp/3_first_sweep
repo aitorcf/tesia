@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+import numpy as np
+import py_functions as pf
+import matplotlib.pyplot as plt
+import os
+
+
+U_list = np.linspace(0,1,10)
+GAMMA_list = np.linspace(0,1,10)
+T_list = np.linspace(0,1,10)
+
+
+for u in U_list:
+    for gamma in GAMMA_list:
+        for t in T_list:
+            
+            pf.write_param(u,gamma,t)
+            os.system('./1_fullrun')
+            os.system('./p_mag graphs_and_data/first_sweep/u-{:6.4f}_g-{:6.4f}_t-{:6.4f}.png'.format(u,gamma,t))
+            
+
+        

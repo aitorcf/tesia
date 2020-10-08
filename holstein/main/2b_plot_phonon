@@ -1,0 +1,10 @@
+#!/bin/sh
+gnuplot --persist <<EOF
+set termoption enh
+set title "Anderson-Holstein model - phonon spectral function"
+set xlabel '{/Symbol w}/D'
+set ylabel 'A({/Symbol w}) D'
+set xrange [0:0.2]
+plot 'corr_FDM_dens_displ-displ.dat' with l title 'g=0.1', \
+  '../0/corr_FDM_dens_displ-displ.dat' with l title 'g=0'
+EOF

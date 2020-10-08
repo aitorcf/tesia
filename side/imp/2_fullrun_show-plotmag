@@ -1,0 +1,9 @@
+#!/bin/bash
+
+nrginit
+
+mpirun -np 1 nrg
+
+./subtract_td
+
+./p_mag
