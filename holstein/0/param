@@ -1,0 +1,33 @@
+[extra]
+omega=0.2
+g=0
+
+[param]
+symtype=QS
+discretization=Z
+Lambda=2
+Tmin=1e-6
+keepenergy=9
+keep=10000
+
+model=model.m
+U=0
+Gamma=0.2
+delta=0
+
+options=Nph=10
+
+ops=A_d n_d n_d^2 nph displ displ^2 acr
+specd=A_d-A_d
+specs=acr-acr displ-displ n_d-n_d
+
+broaden_max=2
+broaden_min=1e-4
+broaden_ratio=1.02
+
+fdm=true
+T=1e-6
+
+smooth=new
+alpha=0.6
+omega0=1e-99

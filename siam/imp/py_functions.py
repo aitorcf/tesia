@@ -532,10 +532,21 @@ def plot_arrow_diagram_WM( ax , colour='black' , fixedpoints=False ):
         
         subprocess.call([ 'wolframscript' ,  'compute_eigenvalues.wls' , f'{U}' , f'{GAMMA}' ])
         
-        analytic_eigenvalues_WM = np.loadtxt( 'm_eigenvalues.dat' )
+        analytic_eigenvalues_WM = []
+        with open( 'm_eigenvalues.dat' ) as f:
+            for line in f:
+                analytic_eigenvalues_WM.append( float( line.strip() ) )
+        analytic_eigenvalues_WM = np.array( analytic_eigenvalues_WM )
         analytic_eigenvalues = compute_h0_eigenvalues_abs( U , GAMMA )
-
-        print( analytic_eigenvalues - analytic_eigenvalues_WM )
+        
+        print( "EIGENVALUE COMPARISON" )
+        print( "Python eigenvalues:" )
+        print( analytic_eigenvalues )
+        print( "Mathematica eigenvalues:" )
+        print( analytic_eigenvalues_WM  )
+        print( "NRG eigenvalues:" )
+        print( nrg_eigenvalues_step  )
+        print( "\n" )
          
         return analytic_eigenvalues_WM - nrg_eigenvalues_step
 

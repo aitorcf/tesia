@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+
+import numpy as np
+import matplotlib.pyplot as plt
+import sys
+import py_functions as pf
+import matplotlib.colors as mcolors
+
+arguments = []
+for arg in sys.argv[1:]:
+    arguments.append(arg)
+
+OUTNAME = 0
+if len(arguments) > 0:
+    OUTNAME = arguments[0] 
+
+
+F_Q0S1 = "e-q0s1_table1.dat"
+F_Q0S3 = "e-q0s3_table1.dat"
+F_Q1S2 = "e-q1s2_table1.dat"
+
+
+plt.style.use('seaborn-paper')
+fig, ax = plt.subplots()
+#plt.grid( b=True, which='major', color='black', linewidth='0.4',alpha=0.3 )
+
+N = pf.get_N( 'e-q0s1_table1.dat' )
+
+steps = np.arange( 0 , N , 2 )
+
+f1 = open(F_Q0S1,'r')
+eigenvalues = np.empty( (np.size(steps), 1 ) )
+pf.plotfile( f1 , steps , eigenvalues , ax , colour='tab:blue' , llabel='Q=0, S=0' , mark='^')
+f1.close()
+
+f2 = open(F_Q0S3,'r')
+eigenvalues = np.empty( (np.size(steps), 1 ) )
+pf.plotfile( f2 , steps , eigenvalues , ax , colour='tab:orange' , llabel='Q=0, S=1' , mark='s' )
+f2.close()
+
+f3 = open(F_Q1S2,'r')
+eigenvalues = np.empty( (np.size(steps),1) )
+pf.plotfile( f3 , steps , eigenvalues , ax , colour='tab:green' , llabel='Q=1, S=1/2' , mark='d')
+f3.close()
+
+ax.set_ylabel( 'E' , fontsize=15 )
+ax.set_xlabel( 'N (even)' , fontsize=15 )
+
+
+ymax = 1.8
+ax.set_ylim([ -0.1 , ymax ])
+ax.set_yticks( np.arange( 0 , ymax , 0.4 ) )
+ax.set_xlim([ -5 , 105 ])
+ax.set_xticks( np.arange( 0 , 105 , 20 ) )
+twin = ax.twinx()
+twin.set_ylim( ax.get_ylim() )
+twin.set_yticks( ax.get_yticks() )
+twin.set_yticklabels([])
+twin.spines['top'].set_visible( False )
+ax.spines['top'].set_visible( False )
+
+ax.tick_params( labelsize=15 )
+
+ax.legend( loc='upper left' , frameon=True , framealpha=0.7 , facecolor='white' , edgecolor='white' , fontsize=15 )
+
+
+if OUTNAME!=0:
+    plt.savefig(OUTNAME)
+else:
+    plt.show()

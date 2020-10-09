@@ -1,6 +1,6 @@
 [extra]
 U=1e-2
-Gamma=2e-3
+Gamma=1e-5
 delta=0.0
 
 [param]

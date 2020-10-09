@@ -1,0 +1,155 @@
+ ***** [NRG] Iteration 1/39 (scale 0.72134752044448169) ***** 
+ ***** [NRG] Iteration 2/39 (scale 0.51006972329839473) ***** 
+ ***** [NRG] Iteration 3/39 (scale 0.36067376022224085) ***** 
+ ***** [NRG] Iteration 4/39 (scale 0.25503486164919736) ***** 
+ ***** [NRG] Iteration 5/39 (scale 0.18033688011112042) ***** 
+ ***** [NRG] Iteration 6/39 (scale 0.12751743082459868) ***** 
+ ***** [NRG] Iteration 7/39 (scale 0.090168440055560212) ***** 
+ ***** [NRG] Iteration 8/39 (scale 0.063758715412299341) ***** 
+ ***** [NRG] Iteration 9/39 (scale 0.045084220027780106) ***** 
+ ***** [NRG] Iteration 10/39 (scale 0.031879357706149671) ***** 
+ ***** [NRG] Iteration 11/39 (scale 0.022542110013890053) ***** 
+ ***** [NRG] Iteration 12/39 (scale 0.015939678853074835) ***** 
+ ***** [NRG] Iteration 13/39 (scale 0.011271055006945026) ***** 
+ ***** [NRG] Iteration 14/39 (scale 0.0079698394265374176) ***** 
+ ***** [NRG] Iteration 15/39 (scale 0.0056355275034725132) ***** 
+ ***** [NRG] Iteration 16/39 (scale 0.0039849197132687088) ***** 
+ ***** [NRG] Iteration 17/39 (scale 0.0028177637517362566) ***** 
+ ***** [NRG] Iteration 18/39 (scale 0.0019924598566343544) ***** 
+ ***** [NRG] Iteration 19/39 (scale 0.0014088818758681283) ***** 
+ ***** [NRG] Iteration 20/39 (scale 0.0009962299283171772) ***** 
+ ***** [NRG] Iteration 21/39 (scale 0.00070444093793406415) ***** 
+ ***** [NRG] Iteration 22/39 (scale 0.0004981149641585886) ***** 
+ ***** [NRG] Iteration 23/39 (scale 0.00035222046896703208) ***** 
+ ***** [NRG] Iteration 24/39 (scale 0.0002490574820792943) ***** 
+ ***** [NRG] Iteration 25/39 (scale 0.00017611023448351604) ***** 
+ ***** [NRG] Iteration 26/39 (scale 0.00012452874103964715) ***** 
+ ***** [NRG] Iteration 27/39 (scale 8.8055117241758019e-05) ***** 
+ ***** [NRG] Iteration 28/39 (scale 6.2264370519823575e-05) ***** 
+ ***** [NRG] Iteration 29/39 (scale 4.402755862087901e-05) ***** 
+ ***** [NRG] Iteration 30/39 (scale 3.1132185259911788e-05) ***** 
+ ***** [NRG] Iteration 31/39 (scale 2.2013779310439505e-05) ***** 
+ ***** [NRG] Iteration 32/39 (scale 1.5566092629955894e-05) ***** 
+ ***** [NRG] Iteration 33/39 (scale 1.1006889655219752e-05) ***** 
+ ***** [NRG] Iteration 34/39 (scale 7.7830463149779469e-06) ***** 
+ ***** [NRG] Iteration 35/39 (scale 5.5034448276098762e-06) ***** 
+ ***** [NRG] Iteration 36/39 (scale 3.8915231574889735e-06) ***** 
+ ***** [NRG] Iteration 37/39 (scale 2.7517224138049381e-06) ***** 
+ ***** [NRG] Iteration 38/39 (scale 1.9457615787444867e-06) ***** 
+ ***** [NRG] Iteration 39/39 (scale 1.3758612069024691e-06) ***** 
+[DM] 38
+[DM] 37
+[DM] 36
+[DM] 35
+[DM] 34
+[DM] 33
+[DM] 32
+[DM] 31
+[DM] 30
+[DM] 29
+[DM] 28
+[DM] 27
+[DM] 26
+[DM] 25
+[DM] 24
+[DM] 23
+[DM] 22
+[DM] 21
+[DM] 20
+[DM] 19
+[DM] 18
+[DM] 17
+[DM] 16
+[DM] 15
+[DM] 14
+[DM] 13
+[DM] 12
+[DM] 11
+[DM] 10
+[DM] 9
+[DM] 8
+[DM] 7
+[DM] 6
+[DM] 5
+[DM] 4
+[DM] 3
+[DM] 2
+[DM] 1
+[FDM] 38
+[FDM] 37
+[FDM] 36
+[FDM] 35
+[FDM] 34
+[FDM] 33
+[FDM] 32
+[FDM] 31
+[FDM] 30
+[FDM] 29
+[FDM] 28
+[FDM] 27
+[FDM] 26
+[FDM] 25
+[FDM] 24
+[FDM] 23
+[FDM] 22
+[FDM] 21
+[FDM] 20
+[FDM] 19
+[FDM] 18
+[FDM] 17
+[FDM] 16
+[FDM] 15
+[FDM] 14
+[FDM] 13
+[FDM] 12
+[FDM] 11
+[FDM] 10
+[FDM] 9
+[FDM] 8
+[FDM] 7
+[FDM] 6
+[FDM] 5
+[FDM] 4
+[FDM] 3
+[FDM] 2
+[FDM] 1
+ ***** [DMNRG] Iteration 1/39 (scale 0.72134752044448169) ***** 
+ ***** [DMNRG] Iteration 2/39 (scale 0.51006972329839473) ***** 
+ ***** [DMNRG] Iteration 3/39 (scale 0.36067376022224085) ***** 
+ ***** [DMNRG] Iteration 4/39 (scale 0.25503486164919736) ***** 
+ ***** [DMNRG] Iteration 5/39 (scale 0.18033688011112042) ***** 
+ ***** [DMNRG] Iteration 6/39 (scale 0.12751743082459868) ***** 
+ ***** [DMNRG] Iteration 7/39 (scale 0.090168440055560212) ***** 
+ ***** [DMNRG] Iteration 8/39 (scale 0.063758715412299341) ***** 
+ ***** [DMNRG] Iteration 9/39 (scale 0.045084220027780106) ***** 
+ ***** [DMNRG] Iteration 10/39 (scale 0.031879357706149671) ***** 
+ ***** [DMNRG] Iteration 11/39 (scale 0.022542110013890053) ***** 
+ ***** [DMNRG] Iteration 12/39 (scale 0.015939678853074835) ***** 
+ ***** [DMNRG] Iteration 13/39 (scale 0.011271055006945026) ***** 
+ ***** [DMNRG] Iteration 14/39 (scale 0.0079698394265374176) ***** 
+ ***** [DMNRG] Iteration 15/39 (scale 0.0056355275034725132) ***** 
+ ***** [DMNRG] Iteration 16/39 (scale 0.0039849197132687088) ***** 
+ ***** [DMNRG] Iteration 17/39 (scale 0.0028177637517362566) ***** 
+ ***** [DMNRG] Iteration 18/39 (scale 0.0019924598566343544) ***** 
+ ***** [DMNRG] Iteration 19/39 (scale 0.0014088818758681283) ***** 
+ ***** [DMNRG] Iteration 20/39 (scale 0.0009962299283171772) ***** 
+ ***** [DMNRG] Iteration 21/39 (scale 0.00070444093793406415) ***** 
+ ***** [DMNRG] Iteration 22/39 (scale 0.0004981149641585886) ***** 
+ ***** [DMNRG] Iteration 23/39 (scale 0.00035222046896703208) ***** 
+ ***** [DMNRG] Iteration 24/39 (scale 0.0002490574820792943) ***** 
+ ***** [DMNRG] Iteration 25/39 (scale 0.00017611023448351604) ***** 
+ ***** [DMNRG] Iteration 26/39 (scale 0.00012452874103964715) ***** 
+ ***** [DMNRG] Iteration 27/39 (scale 8.8055117241758019e-05) ***** 
+ ***** [DMNRG] Iteration 28/39 (scale 6.2264370519823575e-05) ***** 
+ ***** [DMNRG] Iteration 29/39 (scale 4.402755862087901e-05) ***** 
+ ***** [DMNRG] Iteration 30/39 (scale 3.1132185259911788e-05) ***** 
+ ***** [DMNRG] Iteration 31/39 (scale 2.2013779310439505e-05) ***** 
+ ***** [DMNRG] Iteration 32/39 (scale 1.5566092629955894e-05) ***** 
+ ***** [DMNRG] Iteration 33/39 (scale 1.1006889655219752e-05) ***** 
+ ***** [DMNRG] Iteration 34/39 (scale 7.7830463149779469e-06) ***** 
+ ***** [DMNRG] Iteration 35/39 (scale 5.5034448276098762e-06) ***** 
+ ***** [DMNRG] Iteration 36/39 (scale 3.8915231574889735e-06) ***** 
+ ***** [DMNRG] Iteration 37/39 (scale 2.7517224138049381e-06) ***** 
+ ***** [DMNRG] Iteration 38/39 (scale 1.9457615787444867e-06) ***** 
+ ***** [DMNRG] Iteration 39/39 (scale 1.3758612069024691e-06) ***** 
+      512.66 real       734.95 user        26.90 sys
